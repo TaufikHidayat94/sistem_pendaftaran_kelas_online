@@ -180,5 +180,14 @@ Grafik menggunakan Chart.js dan data diambil real-time dari tabel kelas dan orde
 ### 📹 Demo
 
 - Video Demo aplikasi: [Youtube Link](https://youtu.be/dPKsLZ6yxTg)
-- Deploy Online: http://bikinpinter.xyz/
+- Deploy Online: https://bikinpinter.xyz/
+    - Akun dummy untuk demo online:
+        - Role Admin
+            - Username: admin
+            - Password: admin
 
+        - Role Siswa
+            - Username: demo
+            - Password: demo
+
+---

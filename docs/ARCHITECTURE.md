@@ -10,39 +10,39 @@ Sistem mendukung dua role utama:
 
 ## 2. Arsitektur Lapisan (Layered Architecture)
     ┌────────────────────────────────────┐
-    │ Presentation Layer │
+    │ Presentation Layer                 
     │────────────────────────────────────│
-    │ View (HTML, Bootstrap, AdminLTE) │
-    │ Controller (Site, Siswa, Kelas, │
-    │ User, OrderKelas) │
+    │ View (HTML, Bootstrap, AdminLTE)   │
+    │ Controller (Site, Siswa, Kelas,    │
+    │ User, OrderKelas)                  │
     └────────────────────────────────────┘
     │
     ▼
     ┌────────────────────────────────────┐
-    │ Application Layer │
+    │ Application Layer                  │
     │────────────────────────────────────│
     │ Business Logic di dalam Controller │
-    │ Validasi Input │
-    │ Session, FlashMessage, Auth │
+    │ Validasi Input                     │
+    │ Session, FlashMessage, Auth        │
     └────────────────────────────────────┘
     │
     ▼
     ┌────────────────────────────────────┐
-    │ Data Layer │
+    │ Data Layer                         │
     │────────────────────────────────────│
-    │ Model (ActiveRecord): │
-    │ User, Siswa, Kelas, OrderKelas, │
-    │ TahunAjaran, Pengajar │
-    │ Database: MySQL/MariaDB │
+    │ Model (ActiveRecord):              │
+    │ User, Siswa, Kelas, OrderKelas,    │
+    │ TahunAjaran, Pengajar              │
+    │ Database: MySQL/MariaDB            │
     └────────────────────────────────────┘
     │
     ▼
     ┌────────────────────────────────────┐
-    │ Infrastructure Layer │
+    │ Infrastructure Layer               │
     │────────────────────────────────────│
-    │ Yii2 Framework Core, PHP 8.x, │
-    │ Composer, Mailer (SMTP/SSL), │
-    │ XAMPP stack │
+    │ Yii2 Framework Core, PHP 8.x,      │
+    │ Composer, Mailer (SMTP/SSL),       │
+    │ XAMPP stack                        │
     └────────────────────────────────────┘
 ---
 

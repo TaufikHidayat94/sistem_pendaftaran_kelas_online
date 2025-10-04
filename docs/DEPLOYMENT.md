@@ -9,13 +9,13 @@
         - XAMPP
         - Browser modern (Chrome / Edge)
         - Git (opsional, untuk clone repository)
-----------------------------------------------------------------------------------
+---
 
 2. Instalasi Project
 
     - Langkah 1 - Clone atau ekstract project
         Jika via Git:
-            git clone https://github.com/username/kelas.git
+            git clone https://github.com/TaufikHidayat94/sistem_pendaftaran_kelas_online
             cd kelas
 
         Jika manual, ekstrak folder project ke direktori project (kelas), contoh:
@@ -25,7 +25,7 @@
         Jalankan di terminal/command line:
             composer install
         Pastikan tidak ada error memory limit atau missing extension.
-----------------------------------------------------------------------------------
+---
 
 3. Konfigurasi Database
 
@@ -43,7 +43,7 @@
             'password' => '',
             'charset' => 'utf8',
         ];
-----------------------------------------------------------------------------------
+---
 
 4. Konfigurasi Pengiriman Email (Notifikasi Otomatis)
 
@@ -66,7 +66,7 @@
             ],
             'useFileTransport' => false,
         ],
-----------------------------------------------------------------------------------
+---
 
 5. Jalankan Server Lokal
 
@@ -76,7 +76,7 @@
     - Atau dapat menggunakan secara langsung jika apache dan mysql sudah berjalan
       pastikan project sudah ditaruh di folder /htdocs/kelas.
       Akses dari http://localhost/kelas/web
-----------------------------------------------------------------------------------
+---
 
 6. Akun Awal
     | Role  | Username | Password |
@@ -85,7 +85,7 @@
     | Siswa | demo     | demo123  |
     Akun ini digunakan jika belum setting db (baru instalasi), jika sudah ada DB,
     gunakan username sama, tapi passwordnya admin dan demo.
-----------------------------------------------------------------------------------
+---
 
 7. Fitur dan Role
     - Role Admin
@@ -101,7 +101,7 @@
         - Mendaftar kelas (dengan status pending → approved otomatis)
         - Membatalkan atau mengajukan ulang
         - Mengedit profil dan mengunggah foto
-----------------------------------------------------------------------------------
+---
 
 8. Deployment ke Hosting / Demo Online
     - Gunakan hosting yang mendukung PHP ≥ 8.1 & Composer.
@@ -115,7 +115,7 @@
         RewriteRule . index.php [L]
     - Update koneksi database hosting di /config/db.php.
     - Pastikan ekstensi openssl aktif untuk pengiriman email.
-----------------------------------------------------------------------------------
+---
 
 9. Testing
     Untuk menjalankan test gunakan script ini di terminal:
@@ -134,7 +134,7 @@
             vendor\bin\codecept run tests\unit\KonfirmasiTest.php
         - CRUD kelas & user dengan role Admin untuk menambah kelas
             vendor\bin\codecept run tests\unit\AdminTest.php
-----------------------------------------------------------------------------------
+---
 
 10. Troubleshooting Umum
     ________________________________________________________________________________________________________________
@@ -144,8 +144,9 @@
     | Email gagal terkirim       | Cek `useFileTransport` di `web.php` (pastikan `false`)                          |
     | Not Found (404)            | Cek `urlManager` di config dan pastikan `.htaccess` aktif                       |
     | Error DB foreign key       | Pastikan `id_user` dan `id_siswa` sinkron                                       |
+    |______________________________________________________________________________________________________________|
 
-----------------------------------------------------------------------------------
+---
 
 11. Kredit dan Kontributor
 Dibuat oleh: Taufik Hidayat - Universitas Siber Asia
