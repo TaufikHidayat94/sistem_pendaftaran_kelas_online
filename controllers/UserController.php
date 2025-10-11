@@ -33,10 +33,21 @@ class UserController extends Controller
     public function actionIndex()
     {
         $searchModel = new UserSearch();
+        $query = User::find(); // menampilkan semua user dan role
         $dataProvider = new ActiveDataProvider([
-            'query' => User::find()->where(['<>', 'role', 'admin']), // exclude administrator
-        ]);
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+            'sort' => [
+                'defaultOrder' => ['username' => SORT_ASC],
+            ],
+            /* $dataProvider = new ActiveDataProvider([
+                'query' => User::find()->where(['<>', 'role', 'admin']), // exclude administrator
+            ]); */
 
+
+        ]);
         return $this->render('index', [
             'dataProvider' => $dataProvider,
             'searchModel'  => $searchModel,

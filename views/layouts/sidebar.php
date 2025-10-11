@@ -7,8 +7,8 @@ $role = Yii::$app->user->isGuest ? null : Yii::$app->user->identity->role;
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?= Url::to(['/site/index']) ?>" class="brand-link">
-        <img src="<?=$assetDir?>/img/AdminLTELogo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="index.php?r=site/dashboard" class="brand-link">
+        <img src="favicon (1).png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Pendaftaran Kelas</span>
     </a>
 
