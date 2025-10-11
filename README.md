@@ -81,8 +81,8 @@ Aplikasi berbasis web menggunakan **Yii2 Framework** yang memungkinkan siswa men
 1. Clone repo:
 
    ```bash
-   git clone https://github.com/username/kelas-app.git
-   cd kelas-app
+   git clone https://github.com/TaufikHidayat94/sistem_pendaftaran_kelas_online.git
+   cd sistem_pendaftaran_kelas_online
 
 2. Install dependencies:
 
